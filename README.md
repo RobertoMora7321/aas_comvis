@@ -43,8 +43,7 @@ Project ini meenggunakan Sistem Character Recognition (OCR) dapat membaca plat n
 5. lalu tunggu hasil nya LM Studio mempredict datasheet kita gambar demi gambar, dan hasil nya disimpan di result.csv
 
 # CER (Character Error Rate) adalah metrik yang menghitung seberapa banyak kesalahan karakter dalam hasil prediksi teks dibandingkan dengan teks asli (ground truth).
-CER= 
- Substitusi+Insert+Delete / Jumlah karakter ground truth 
+CER= Substitusi+Insert+Delete / Jumlah karakter ground truth 
 ​- Substitusi = karakter salah (misalnya B jadi 8)
 - Insert = karakter tambahan yang seharusnya tidak ada
 - Delete = karakter yang hilang
