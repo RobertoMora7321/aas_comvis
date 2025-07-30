@@ -14,7 +14,7 @@ Project ini meenggunakan Sistem Character Recognition (OCR) dapat membaca plat n
 - Visual Studio Code
 
 # Setup LM Studio
-1. Masuk ke menu developer
+1. Masuk ke menu developer LM Studio
 2. Select mode to load Model misal nya llava-v1.5-7b-llamafile
 3. Status pilih ke Running
 4. lalu cari di browser http://localhost:1234/v1/models
@@ -34,4 +34,26 @@ Project ini meenggunakan Sistem Character Recognition (OCR) dapat membaca plat n
   ],
   "object": "list"
 } 
+
+# Cara  Menjalankan 
+1. Masuk ke menu developer LM Studio
+2. Select model to load yaitu llava-v1.5-7b-llamafile
+3. Status ubah ke Running
+4. lalu buka Visual Studio Code jalankan program ocr_main.py
+5. lalu tunggu hasil nya LM Studio mempredict datasheet kita gambar demi gambar, dan hasil nya disimpan di result.csv
+
+# CER (Character Error Rate) adalah metrik yang menghitung seberapa banyak kesalahan karakter dalam hasil prediksi teks dibandingkan dengan teks asli (ground truth).
+CER= 
+ Substitusi+Insert+Delete / Jumlah karakter ground truth 
+​- Substitusi = karakter salah (misalnya B jadi 8)
+- Insert = karakter tambahan yang seharusnya tidak ada
+- Delete = karakter yang hilang
+
+# Contoh Prediksi yang benar 
+test015_1.jpg => GT: AD1798BT | Pred: AD1798 | CER: 0.25
+
+# Contoh Prediksi yang salah
+test011_2.jpg => GT: B9374RI | Pred: B9132 | CER: 0.714 
+
+
 
