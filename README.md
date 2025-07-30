@@ -44,6 +44,7 @@ Project ini meenggunakan Sistem Character Recognition (OCR) dapat membaca plat n
 
 # CER (Character Error Rate) adalah metrik yang menghitung seberapa banyak kesalahan karakter dalam hasil prediksi teks dibandingkan dengan teks asli (ground truth).
 CER= Substitusi+Insert+Delete / Jumlah karakter ground truth 
+
 ​- Substitusi = karakter salah (misalnya B jadi 8)
 - Insert = karakter tambahan yang seharusnya tidak ada
 - Delete = karakter yang hilang
